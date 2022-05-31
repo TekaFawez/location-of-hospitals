@@ -1,0 +1,26 @@
+
+.image-bg{
+  width:100%;
+  height:90vh;
+}
+.container1{
+  display: flex;
+}
+.container1 .container{
+  color: blue;
+  width: 50%;
+}
+img{
+  width:100%;
+  height:100%;
+}
+
+.img{
+  width:500px;
+  height: 480px;
+  position: relative;
+  top: 60px;
+  right: 80px;
+
+}
+

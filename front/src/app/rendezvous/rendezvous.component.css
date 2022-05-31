@@ -1,0 +1,236 @@
+/*container qui englobe toute la page*/
+.container{
+  display:flex;
+  justify-content: space-between;
+  margin-top:60px;
+
+}
+/* container qui englobe la partie gauche*/
+.container .container1{
+  text-align: center;
+}
+/* la barre de recherche*/
+.container .container1 .search-line{
+  width:95%;
+  height:40px;
+  display:flex;
+  position: relative;
+  left: 7px;
+
+}
+select{
+  width: 200px;
+  border: 1px solid #197df2;
+  color: blue;
+  font-weight: bold;
+}
+.container .container1 .search-line .box1{
+  width: 80%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.container .container1 .search-line .box2{
+  width: 20%;
+  height:100%;
+  border: 1px solid #197df2;
+
+}
+.search-btn{
+  width:100%;
+  height:100%;
+  border:none;
+  color:white;
+  background-color:#197df2;
+}
+/* fin de la barre de recherche*/
+.txt{
+  width:98%;
+  height:100%;
+}
+.container2{
+  /* border: 1px solid #197df2; */
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  padding-top: 270px;
+}
+
+/* container qui englobe la partie gauche*/
+.container .container1{
+  border:2px solid rgb(178, 198, 235);
+  width:300px;
+  height: 600px;
+
+}
+/* image dans le container de la partie gauche*/
+.container .container1 img{
+  width:100%;
+  position: relative;
+  top:70px;
+}
+
+/* le container n2 qui contient les information sur le medecins*/
+.container .container2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width:800px;
+  height:600px;
+  /* border:2px solid rgb(178, 198, 235); */
+}
+/* les cartes qui contient et informations sur les docteurs */
+.container .container2 .box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:80%;
+  height:150px;
+  /* border:2px solid rgb(178, 198, 235); */
+  margin:10px;
+  display:flex;
+}
+/* image de medecin dans les cartes du container2 qui est dans la partie gauche*/
+.container .container2 .box .card1 img{
+  width:90%;
+  height:90%;
+}
+/* la bouton chercher*/
+
+
+
+
+.card1{
+  width:20%;
+  height:120px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.card2{
+  color:blue;
+  width:80%;
+  height:150px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0px;
+  padding-left: 10px;
+
+}
+/*icone de position*/
+.fas{
+color: blue;
+font-size: 20px;
+}
+.card3{
+  width:40%;
+  height:120px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.btn-card3{
+  border:none;
+  background-color:#197df2;
+  color: white;
+  height:70px;
+  width: 90%;
+
+
+}
+.btn-card3:hover{
+  border:none;
+  background-color:#206abe;
+  color: white;
+  height:70px;
+  width: 90%;
+
+
+
+}
+/*Icone de la carte du docteur*/
+.fa-calendar-check{
+position: relative;
+right: 10px;
+
+
+}
+.container .container2 .box .btn1{
+
+  width:60%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+  left: 40px;
+}
+.form-select{
+
+  border: 1px solid #197df2;
+}
+.btn{
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+  left: 75px;
+  top:150px;
+  color:white;
+}
+.btn2{
+  width:30%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+  left: 60px;
+  top:60px;
+  color:white;
+}
+
+
+.container .container2 .box >div button{
+  color: white;
+  font-weight: bold;
+  border:none;
+}
+
+.medicament{
+  width:250px;
+  height:50px;
+
+
+}
+.nomph{
+  color:blue;
+  font-weight:700;
+  font-size: 15px;
+  bottom:5px;
+  position: relative;
+
+}
+
+h3{
+  color:blue;
+  position: relative;
+  top:70px;
+}
+.form-group{
+  position: relative;
+  top:100px;
+  color: blue;
+}
+.med{
+  color:rgb(93, 93, 236);
+
+}
+.search-line{
+  position: relative;
+  top:100px;
+}
+h6{
+  font-size: 13px;
+}

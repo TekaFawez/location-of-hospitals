@@ -1,0 +1,66 @@
+
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary my-3" [routerLink]="['/hopitallist']">Retour</button>
+            <hr>
+            <h1> Editer hôpitaux</h1>
+        </div>
+    </div>
+    <form [formGroup]="updateHopitalForm" (ngSubmit)="updateHopital()">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="nom">Hôpital:</label>
+                <input type="text" name="nom" id="nom" formControlName="nom" class="form-control">
+                <div *ngIf="nom.touched && nom.invalid">
+                    <small *ngIf="nom.errors.required" class="text-danger"> le nom de l'hôpital est obligatoire<br></small>
+                    <small *ngIf="nom.errors.pattern" class="text-danger">Le nom de l'hôpital est invalide<br></small>
+
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Adresse de l'hôpital:</label>
+                <input type="text" name="address" id="address" class="form-control" formControlName="address">
+                <div *ngIf="address.touched && address.invalid">
+                    <small *ngIf="address.errors.required" class="text-danger">L'adresse est obligatoire<br></small>
+
+
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="nom">Altitude:</label>
+                    <input type="text" name="altitude" id="altitude" formControlName="altitude" class="form-control">
+                    <div *ngIf="altitude.touched">
+                        <small *ngIf="altitude.errors.required" class="text-danger"> Altitude est obligatoire<br></small>
+
+
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="latitude">latitude:</label>
+                    <input type="text" name="latitude" id="latitude" class="form-control" formControlName="latitude">
+                    <div *ngIf="latitude.touched">
+                        <small *ngIf="latitude.errors.required" class="text-danger">latitude est obligatoire<br></small>
+
+
+                    </div>
+                </div>
+
+
+
+        <div class="form-row">
+            <div class="form-group col">
+                <input type="submit" value="Valider" [disabled]="updateHopitalForm.invalid" class="btn btn-warning">
+            </div>
+        </div>
+
+    </form>
+</div>
+<app-footer></app-footer>
+
+
+

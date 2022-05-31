@@ -1,0 +1,48 @@
+
+
+<body>
+  <app-navbar></app-navbar>
+
+  <link rel="stylesheet" type="text/css">
+  <div role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+         <img [src]="acceuil"  width="500px">
+        <h1 class="display-3">SAM votre plateforme<br>medicale en ligne </h1>
+      </div>
+    </div>
+
+    <div class="container1">
+
+      <!-- Example row of columns -->
+      <div class="box">
+        <div class="center-img" [routerLink]="['/rendezvous']">
+           <img [src]="med"  width="230px">
+        </div>
+        <div class="content">
+          <p><span class="s">S</span><span class="a">A</span><span class="m">M</span> <span
+              style="color:blue;font-family: 'Playfair Display', serif;"> vous permet de trouver facilement un médecin
+              et lui contacter</span> </p>
+          <p><span class="s">S</span><span class="a">A</span><span class="m">M</span> <span
+              style="color:blue; font-family: 'Playfair Display', serif;"> vous permet de prendre un rendez-vous en
+              ligne </span> </p>
+        </div>
+
+      </div>
+      <div class="box">
+        <div class="center-img" [routerLink]="['/hopital']">
+           <img [src]="hopital"  width="200px">
+        </div>
+        <div class="content">
+          <p><span class="s">S</span><span class="a">A</span><span class="m">M</span> <span
+              style="color:blue;font-family: 'Playfair Display', serif;"> vous permet de chercher l'hopital la plus
+              proche </span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <app-footer></app-footer>

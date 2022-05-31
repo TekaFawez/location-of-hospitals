@@ -1,0 +1,49 @@
+<!-- Fawez TEKA
+    https://www.linkedin.com/in/fawez-teka/
+    https://github.com/TekaFawez
+   Copyright © Fawez TEKA . All rights reserved. -->
+
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary my-3" [routerLink]="['/hopitallist']">Retour</button>
+            <hr>
+            <h1>Ajouter Hôpital</h1>
+        </div>
+    </div>
+    <form [formGroup]="addHopitalForm" (ngSubmit)="addHopital()">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="nom">Le nom de l'hôpital:</label>
+                <input type="text" name="nom" id="nom" formControlName="nom" class="form-control">
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address">Adresse de l'hôpital:</label>
+            <input type="text" name="address" id="address" class="form-control" formControlName="address">
+
+        </div>
+        <div class="form-group">
+            <label for="altitude">altitude:</label>
+            <input type="text" name="altitude" id="altitude" class="form-control" formControlName="altitude">
+
+        </div>
+        <div class="form-group">
+            <label for="latitude">latitude:</label>
+            <input type="text" name="latitude" id="latitude" class="form-control" formControlName="latitude">
+
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-group col">
+
+                <input type="submit" value="Ajouter " class="btn btn-info">
+            </div>
+        </div>
+
+    </form>
+</div>
+<app-footer></app-footer>

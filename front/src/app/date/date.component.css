@@ -1,0 +1,106 @@
+.container{
+  display:flex;
+  justify-content: space-between;
+  margin-top:60px;
+
+}
+.container2{
+  border: 1px solid #197df2;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  padding-top: 270px;
+}
+
+/* les cartes qui contient et informations sur les docteurs */
+.box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:40%;
+  height:200px;
+  /* border:2px solid rgb(178, 198, 235); */
+  margin:10px;
+  display:flex;
+  position: absolute;
+  left:50px;
+}
+.box .card1 img{
+  width:90%;
+  height:100%;
+  position: relative;
+  top:10px;
+}
+/* la bouton chercher*/
+
+
+
+
+.card1{
+  width:20%;
+  height:120px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.card2{
+  color:blue;
+  width:80%;
+  height:120px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0px;
+  padding-left: 10px;
+
+}
+.fas{
+  color: blue;
+  font-size: 20px;
+  }
+  h2{
+      color: blue;
+      position:absolute;
+      right:130px;
+
+  }
+  .but{
+      position:absolute;
+      top:120px;
+      right:170px;
+  }
+  .but1{
+      position:absolute;
+      top:120px;
+      right:50px;
+  }
+  .but2{
+      position:absolute;
+      top:520px;
+      left:750px;
+  }
+  .box2{
+      position:absolute;
+      top:380px;
+      right:880px;
+
+  }
+  .img2{
+      color:blue;
+  }
+  h5  {
+      color:blue;
+  }
+  h4 {
+      color:blue;
+  }
+
+      .dropdown3{
+          position:absolute;
+          top:280px;
+          right:150px;
+          }
+         td{
+             color:#197df2;
+             font-size: 30px;
+             font-weight: bold;
+             position:relative;
+             left:40px;
+         }
